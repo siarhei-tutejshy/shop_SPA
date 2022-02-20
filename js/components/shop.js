@@ -1,3 +1,4 @@
+import { onAddCart } from '../utils/buyButton.js';
 import { getCookie, setCookie } from '../utils/cookies.js';
 import { cartWidget } from './cartWidget.js';
 import { header } from './Header.js';
@@ -6,8 +7,7 @@ function shop() {
     const shopContainer = document.createElement('div');
     shopContainer.classList.add('shop__container');
 
-    const noDataTitle = document.createElement('h3')
-    noDataTitle.innerText = "no data"
+    
 
     let data = JSON.parse(localStorage.getItem('data'));
     let buy = [];
@@ -41,12 +41,10 @@ function shop() {
         itemElem.append(imgItem, titleItem, priceItem, buyButton);
         shopContainer.append(itemElem);
 
-        buyButton.addEventListener('click', () => {
-            buy.push({ id: item.id, price: item.price });
-            setCookie('data', JSON.stringify(buy));
-            document.querySelector('.header .cart__widget').remove();
-            header.append(cartWidget(getCookie('data')));
-        });
+        buyButton.addEventListener('click', (e) => onAddCart(e,buy,item));
+            
+        
+       
     });
     return shopContainer;
 }

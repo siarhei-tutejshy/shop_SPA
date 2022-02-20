@@ -133,6 +133,10 @@ body {
     text-transform: uppercase;
     cursor: pointer;
 }
+.buy__button.bought{
+    background-color: #726f6f;
+    color: rgb(43, 42, 42);
+}
 
 /* ==============cart */
 .item__cart {

@@ -94,7 +94,7 @@ class App {
         this.renderHead();
 
         if (!this.storage || this.storage.length === 0) {
-            this.getData().then(() => this.renderContent()).catch((e)=> console.log(e.message));
+            this.getData().then(() => this.renderContent());
         } else {
             this.renderContent()
         }
