@@ -47,12 +47,16 @@ body {
     list-style: none;
 }
 .nav__list a {
-    font-size: 20px;
+    font-size: 22px;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-weight: 600;
+}
+.nav__list a:hover {
+    background-color: rgb(224, 143, 51);
+    color: #fff;
 }
 
 /* ==============cartwidget */
@@ -91,13 +95,16 @@ body {
 }
 /* ==============home */
 .shop__welcome {
-    padding: 30px 50px;
-    background-color: black;
+    background-color: rgb(224, 143, 51);
 }
-.shop__welcome a{
+.shop__welcome a {
+    display: inline-block;
+    padding: 30px 50px;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .main {
@@ -127,7 +134,7 @@ body {
     font-weight: 600;
     margin-bottom: 10px;
 }
-.shop__container .item a{
+.shop__container .item a {
     display: inline-block;
     padding: 5px 10px;
     background-color: rgb(56, 165, 56);
@@ -145,17 +152,19 @@ body {
 .shop__container .item__img img {
     width: 70px;
 }
-.shop__container .buy__button,
-.product__item .buy__button {
-    padding: 10px 30px;
+
+.buy__button {
+    border-style: none;
+    padding: 20px 35px;
     background-color: black;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
 }
-.buy__button.bought{
-    background-color: #726f6f;
-    color: rgb(43, 42, 42);
+
+.buy__button.bought {
+    background-color: #e08f33;
+    color: #fff;
 }
 
 /* ==============cart */
@@ -168,6 +177,7 @@ body {
     align-items: center;
     padding: 10px;
 }
+
 .item__cart__price {
     font-weight: 600;
     font-size: 20px;
@@ -199,6 +209,7 @@ body {
     font-size: 28px;
     color: rgb(77, 75, 75);
 }
+
 .total_price {
     display: flex;
     justify-content: flex-end;
@@ -210,13 +221,14 @@ body {
 .item__cart__quantity .plus {
     border: none;
     display: block;
-    background-color: blue;
+    background-color: rgb(56, 165, 56);
     color: #fff;
     font-size: 30px;
     cursor: pointer;
     width: 50px;
     height: 50px;
 }
+
 .item__cart__quantity > div {
     display: flex;
     justify-content: center;
@@ -226,13 +238,15 @@ body {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
+
 .item__cart__price {
     width: 15%;
 }
+
 .delete__button {
     width: 60px;
     height: 60px;
-    background-image: url(/assets/);
+    background-image: url(/assets/remove.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

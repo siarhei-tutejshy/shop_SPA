@@ -7,10 +7,9 @@ function shop() {
     const shopContainer = document.createElement('div');
     shopContainer.classList.add('shop__container');
 
-    
-
     let data = JSON.parse(localStorage.getItem('data'));
     let buy = [];
+
     if (getCookie('data'))  buy = JSON.parse(getCookie('data'));
 
     if (!data)  return;
@@ -42,10 +41,8 @@ function shop() {
         shopContainer.append(itemElem);
 
         buyButton.addEventListener('click', (e) => onAddCart(e,buy,item));
-            
-        
-       
     });
+    
     return shopContainer;
 }
 

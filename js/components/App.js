@@ -12,7 +12,6 @@ import home from './home.js';
 class App {
     constructor() {
         this.app;
-        
     }
 
     create() {
@@ -88,6 +87,7 @@ class App {
             main.append(product(this.storage, id));
         }
     }
+    
     renderContent() {
         this.create();
         this.render();
@@ -104,6 +104,7 @@ class App {
         }
 
         window.addEventListener('hashchange', () => this.loadMain());
+
         window.addEventListener('load', (event) => {
             let a = document.querySelectorAll('a[href="/"]');
             a.forEach((a) => {

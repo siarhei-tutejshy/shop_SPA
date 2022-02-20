@@ -12,7 +12,6 @@ class Slider {
             const sliderItem = document.createElement('div');
             sliderItem.classList.add('slider__item');
             
-
             const sliderImage = document.createElement('div');
             sliderImage.classList.add('slider__image');
             sliderImage.style.backgroundImage = `url(${item.image})`;

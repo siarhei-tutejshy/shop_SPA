@@ -2,6 +2,7 @@ class Footer {
     constructor() {
         this.element;
     }
+    
     create() {
         const appElement = document.createElement('footer');
         appElement.classList.add('footer');
