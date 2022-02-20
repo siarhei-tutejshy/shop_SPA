@@ -46,7 +46,11 @@ class App {
         linkCSS.rel = 'stylesheet';
         linkCSS.href = '/css/style.css';
 
-        head.append(metaUTF, metaVP, linkCSS);
+        const linkCSSSlider = document.createElement('link');
+        linkCSSSlider.rel = 'stylesheet';
+        linkCSSSlider.href = '/css/slider.css';
+
+        head.append(metaUTF, metaVP, linkCSS, linkCSSSlider);
     }
 
     get storage() {

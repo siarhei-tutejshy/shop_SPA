@@ -30,7 +30,7 @@ body {
     display: block;
     height: 60px;
     width: 200px;
-    background-image: url(/logo1.svg);
+    background-image: url(/assets/logo1.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@ body {
     position: relative;
     height: 60px;
     width: 100px;
-    background-image: url(/shopping-cart1.png);
+    background-image: url(/assets/shopping-cart1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -89,6 +89,16 @@ body {
     height: 60px;
     width: 100px;
 }
+/* ==============home */
+.shop__welcome {
+    padding: 30px 50px;
+    background-color: black;
+}
+.shop__welcome a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
 
 .main {
     padding: 20px 10px 0 10px;
@@ -103,6 +113,8 @@ body {
     margin: 0 auto;
 }
 .shop__container .item {
+    border-radius: 5px;
+    box-shadow: 0 0 25px #fff;
     padding: 20px;
     width: 20%;
     text-align: center;
@@ -113,6 +125,14 @@ body {
 .shop__container .item .price {
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 10px;
+}
+.shop__container .item a{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgb(56, 165, 56);
+    color: #fff;
+    margin: 10px 0;
 }
 .shop__container .item__img {
     width: auto;
@@ -212,7 +232,7 @@ body {
 .delete__button {
     width: 60px;
     height: 60px;
-    background-image: url(/remove.png);
+    background-image: url(/assets/);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -264,7 +284,7 @@ body {
 .footer__logo {
     height: 60px;
     width: 300px;
-    background-image: url(/logo1.svg);
+    background-image: url(/assets/logo1.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
